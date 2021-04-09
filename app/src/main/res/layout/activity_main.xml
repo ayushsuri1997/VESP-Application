@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.075"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.00"
+        android:background="@color/colorTransparent"
+        android:clickable="true"
+        app:layout_constraintVertical_bias="0.5"/>
+
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.075"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:background="@color/colorTransparent"
+        android:clickable="true"
+        app:layout_constraintVertical_bias="0.5"/>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Student"
+        android:textColor="@color/colorYellow"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Profile"
+        android:textColor="@color/colorSpinner"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@id/textView7"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tx19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student_Fname"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/colorSpinner"
+        app:layout_constraintStart_toStartOf="@id/bb"
+        app:layout_constraintEnd_toEndOf="@id/bb"
+        app:layout_constraintTop_toTopOf="@id/bb"
+        app:layout_constraintBottom_toBottomOf="@id/bb"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="textStart"
+        />
+
+
+    <TextView
+        android:id="@id/tx20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Branch"
+        android:textColor="@color/colorYellow"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/bb"
+        app:layout_constraintEnd_toEndOf="@+id/bb"
+        app:layout_constraintStart_toStartOf="@+id/bb"
+        app:layout_constraintTop_toTopOf="@+id/bb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Rollno"
+        android:textColor="@color/colorYellow"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/bb"
+        app:layout_constraintEnd_toEndOf="@+id/bb"
+        app:layout_constraintStart_toStartOf="@+id/bb"
+        app:layout_constraintTop_toBottomOf="@+id/tx20" />
+
+
+    <TextView
+        android:id="@+id/tx21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student_Sname"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/colorSpinner"
+        app:layout_constraintStart_toStartOf="@id/bb"
+        app:layout_constraintEnd_toEndOf="@id/bb"
+        app:layout_constraintTop_toBottomOf="@id/tx19"
+        app:layout_constraintBottom_toBottomOf="@id/bb"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="textStart"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student_email"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/colorSpinner"
+        app:layout_constraintStart_toStartOf="@id/bb"
+        app:layout_constraintEnd_toEndOf="@id/bb"
+        app:layout_constraintTop_toBottomOf="@id/tx21"
+        app:layout_constraintBottom_toBottomOf="@id/bb"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.75"
+        android:textAlignment="textStart"
+        />
+
+
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorTransparent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"/>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Notices"
+        android:textColor="@color/colorYellow"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bb"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/StudentNotice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.075"
+        android:text="Notice"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/buttonshape1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="Logout"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="1"
+        android:textColor="@color/colorSpinner"
+        android:background="@color/colorTransparent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/home"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

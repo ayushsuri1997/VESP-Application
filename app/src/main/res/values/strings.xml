@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="Branch">
+        <item>CO-A</item>
+        <item>CO-B</item>
+        <item>EJ</item>
+        <item>EQ</item>
+        <item>ET</item>
+        <item>IS</item>
+        <item>IE</item>
+    </array>
+
+    <array name="batch">
+        <item>2018-19</item>
+        <item>2019-20</item>
+        <item>2020-21</item>
+        <item>2021-22</item>
+        <item>2022-23</item>
+        <item>2023-24</item>
+        <item>2024-25</item>
+    </array>
+
+    <array name="Share_mode_prin">
+        <item>Principal to HOD</item>
+        <item>Principal to HOD and Staff</item>
+        <item>Principal to HOD,Staff and Students</item>
+    </array>
+
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+</resources>

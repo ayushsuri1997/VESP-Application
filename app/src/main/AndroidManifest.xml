@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View_Stud_Notice"></activity>
+        <activity android:name=".View_Staff_Notice" />
+        <receiver android:name=".BroadcastRec">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationBackgroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".JobSchedularClass"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".View_HOD_Notice" />
+        <activity android:name=".Post_prin_page" />
+        <activity android:name=".View_Teacher" />
+        <activity android:name=".ResetPasswordStaff" />
+        <activity android:name=".HOD_page" />
+        <activity android:name=".ResetPasswordHOD" />
+        <activity android:name=".HOD_login" />
+        <activity android:name=".Add_Teacher" />
+        <activity android:name=".Principal_page" />
+        <activity android:name=".Principal_Login" />
+        <activity android:name=".ViewStudentDetails" />
+        <activity android:name=".TeacherPage" />
+        <activity android:name=".StaffLogin" />
+        <activity android:name=".HodLogin" />
+        <activity android:name=".AddStudent" />
+        <activity android:name=".EntryApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
