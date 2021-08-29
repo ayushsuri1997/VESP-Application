@@ -1,5 +1,5 @@
 # VESP-Application
-An Android Application for managing the workflow of the college.
+Developed an App which can be used by the college in terms of management and various other activities. It will help the staff to post notifications which can reach the students easily rather than verbal communication. My aim is to digitalise the information and data sharing in VES Polytechnic college.
 
 # Screenshots
 Some of the images of the Android Application
